@@ -1,0 +1,12 @@
+parameters:
+#    covoit_user.example.class: RTFMIS\Covoiturage\UserBundle\Example
+
+services:
+#    covoit_user.example:
+#        class: %covoit_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    covoit_user.registration.form.type:
+        class: RTFMIS\Covoiturage\UserBundle\Form\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: rc_user_registration }
