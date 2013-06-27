@@ -1,3 +1,7 @@
+rtfmis_covoiturage_trip:
+    resource: "@RTFMISCovoiturageTripBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # FOSUserBundle routes
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
